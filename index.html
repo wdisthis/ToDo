@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas fitra</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h2>Assignment</h2>
+        <div class="realtime-date" id="current-date"></div>
+        <div class="stats-container" id="progress-text">0/0 Tasks Completed</div>
+    </header>
+
+    <div id="active-section">
+        <div class="section-title">To Do</div>
+        <div class="task-list" id="active-list"></div>
+    </div>
+
+    <div id="completed-section">
+        <div class="section-title">Completed</div>
+        <div class="task-list" id="completed-list"></div>
+    </div>
+</div>
+
+<button class="fab" id="open-form-btn">+</button>
+
+<div class="input-overlay" id="input-overlay">
+    <div class="modal-content">
+        <h3 style="margin: 0 0 20px 0; text-align: center;">New Task</h3>
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Task name">
+            <input type="text" id="subject-input" placeholder="Subject" style="text-transform: uppercase;">
+            <div class="subject-history" id="subject-history"></div>
+            <input type="date" id="deadline-input">
+            <select id="priority-input">
+                <option value="Low">Low Priority</option>
+                <option value="Medium" selected>Medium Priority</option>
+                <option value="High">High Priority</option>
+            </select>
+            <div class="btn-group">
+                <button class="btn-alt" id="cancel-btn">Cancel</button>
+                <button class="btn-main" id="add-btn">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
